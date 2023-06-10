@@ -1,0 +1,29 @@
+è importante fare delle buone registrazioni
+
+fare una buona registrazione è fondamentale al fine di ottenere un buon prodotto finale, perchè una ripresa di qualità apre a semplici e funzionali possibilità di indagine e di lavoro del materiale, sia in termini di EQ, che in termini di stereofonia.
+
+Una fondamentale premessa da fare è che non esistono specifiche regole, le scelte da prendere in fase di ripresa devono essere funzionali all'obiettivo che si vuole raggiungere. è importante decidere il tipo di prodotto finale che si vuole ottenere, e di conseguenza pensare al come ottenere materiale ottimale da utilizzare a tal fine. In base a questo si prendono decisioni relative a
+
+-scelta dei microfoni: la scelta del microfono e la distanza di quest'ultimo dalla sorgente sono fattori determinanti per la resa del prodotto finale. In base alla sorgente da riprendere e al ruolo che questa avrà nel mix finale, si sceglie il microfono in base a
+_diagramma polare: la sua direzionalità, in base a quali caratteristiche prediligiamo: se vogliamo un suono ambientale è meglio un omnidirezionale, mentre se preferiamo riprendere il suono diretto meglio un cardioide
+
+_tipologia: in base all'escursione dinamica della sorgente e se la si intende mantenere o no: ovvero, se si vuole mantenere la registrazione dinamica in termini di ampiezza, è preferibile scegliere un microfono sensibile in modo tale che riesca a riprendere anche i suoni a bassa intensità, come uno a consensatore.
+
+-distanza dei microfoni dalla sorgente: in base al punto di ripresa principale, si identificano i fattori qualitativi della sorgente che si intendono riprendere, al fine di bilanciare lo spettro e l'ambiente fornendo informazioni mancanti al main, come magari il dettaglio dello strumento o le alte frequenze.
+
+Fare un routing Mid Side da una traccia stereo equivale a sommare L+R nel primo canale della traccia Mid Side, ottenendo quindi il Mid, e sottrarre L-R (quindi L+R invertito di fase) nel secondo canale della traccia mid side per ottenere il Side. in questo modo, su specifiche DAW che ci permettono di lavorare separatamente su ciascun canale di una traccia, come ad esempio Reaper, posso lavorare separatamente sul mid e sul side. questo apre la strada a numerose possibilità di indagine e di missaggio dell'immagine stereo in termini di ampiezza e dimensioni.
+
+La registrazione dello spot monofonico dell'arpa non apre possibilità di mix stereofonico perchè la sorgente è in mono: questo non permette all'ingegnere di mix di fare un routing Mid Side perchè i canali L e R sono fondamentalmente la stessa identica sorgente. Di conseguenza, sommare L+(-R) equivale ad ottenere cancellazioni di fase che cancellano totalmente il segnale non permettendomi di ottenere la componente Side della sorgente. Sull'altro canale invece, altro non avrò se non una somma di due registrazioni identiche, ovvero L+R, essendo L ed R la stessa sorgente.
+
+Il punto è che si inizia a lavorare al mix definitivo già dalla fase di registrazione: se le registrazioni sono state effettuate a dovere, l'ingegnere avrà un'ottima base di lavoro per post-produrre il progetto, dovento intervenire in piccolissime dosi ed effettuando qualsiasi routing in estrema semplicità.
+______________________________________________________________________________________________________________
+INTERVENTI
+la voce della intro parlata non è stata registrata direttamente in un canale, l'unica registrazione nella quale è presente il segnale della voce è quella dell'arpa, per cui 
+
+
+SILVI DICE non cercare di migliorare le condizioni nelle quali ti hanno consegnato il lavoro. fai il minimo indispensabile tralasciando il tuo opus artistico. non cercare di creare il side di sorgenti mono con reverberi o EQ MS ne tantomeno di allargarle. QUINDI:
+
+1 spegni gli interventi che hai fatto su midside separatamente sull ORTF (comp e reverb)
+2 fai comunque il routing MS delle sorgenti MONO. farai interventi solo sul mid, pazienza. oppure, esporta l'MS pan da faust e mettilo nella traccia mono. dovrebbe essere in grado di creare un side tramite decorrelazioni di fase
+
+una volta consegnato il lavoro basic, con silvi valutiamo se allargre l'arpa o se intervenire separatamente su mid\side.

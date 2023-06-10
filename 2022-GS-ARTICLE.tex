@@ -31,7 +31,7 @@
 		
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width = .50\textwidth]{img/image1.jpeg}
+			\includegraphics[width = .50\textwidth, height = .43\textheight]{img/image1.jpeg}
 			\caption {Locandina dell'evento}
 		\end{center}
 	\end{figure}
@@ -50,17 +50,29 @@
 			\end{compactitem}
 		\item \textbf{Distanza dei microfoni dalla sorgente:} In base alle qualità del punto di registrazione principale, in un ensemble si identificano gli elementi qualitativi di una sezione precisa che mancano alla sua ripresa principale, al fine di bilanciare lo spettro e l'ambiente fornendo le informazioni mancanti avvicinando il microfono, come il dettaglio dello strumento o le alte frequenze.
 	\end{compactitem}
+
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width= .50\textwidth]{img/image3.jpg}
+			\caption{esecuzione arpa}
+		\end{center}
+	\end{figure}
 	
 	\paragraph{Mappatura dei microfoni}
-	Il primo passo necessario per organizzare al meglio una sessione di post produzione audio di un concerto è indubbiamente lo studio dell'organizzazione dello spazio sul palco e della disposizione dei microfoni, al fine di comprendere gli aspetti qualitativi di ciascuna registrazione e poterli, di conseguenza, sfruttare al meglio ricostruendo una determinata immagine stereofonica in fase di post produzione audio.
+	Il primo passo per organizzare al meglio una sessione di post produzione audio di un concerto è indubbiamente lo studio dell'organizzazione dello spazio sul palco e della disposizione dei microfoni, al fine di comprendere gli aspetti qualitativi di ciascuna registrazione e poterli, di conseguenza, sfruttare al meglio ricostruendo una determinata immagine stereofonica in fase di post produzione audio.
 	Nella sessione di registrazione, sono stati installati 3 punti di ripresa:
 		\begin{compactitem}
-			\item \textbf{Pianoforte} per questo punto di ripresa è stata utilizzata una coppia stereofonica Schoeps in configurazione ORTF, posta 30cm circa al di sopra della cordiera del pianoforte
-			\item \textbf{Arpa} per questo punto è stato utilizzato un microfono omnidirezionale di marca Line Audio, modello OM1, posto a 30cm circa dalle corde dello strumento.
-			\item \textbf{viola/soprano} per questi due elementi è stato utilizzato lo stesso punto di ripresa, ovvero un microfono cardioide di marca Line Audio, modello CM4.
+			\item \textbf{Pianoforte} per questo punto di ripresa è stata utilizzata una coppia stereofonica Schoeps in configurazione ORTF, posta 30cm al di sopra della cordiera del pianoforte
+			\item \textbf{Arpa} per questo punto è stato utilizzato un microfono omnidirezionale di marca Line Audio, modello OM1
+			\item \textbf{viola/soprano} per questi due elementi è stato utilizzato un microfono cardioide di marca Line Audio, modello CM4.
 		\end{compactitem}
 	
-	%inserisci uno screen del video dove si vede bene il palco e i microfoni
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width= .50\textwidth, height = .15\textheight]{img/image2.jpg}
+			\caption{esecuzione pianoforte e viola}
+		\end{center}
+	\end{figure}
 
 \section{L'approccio}
 Una volta chiara l'organizzazione dello spazio acustico e l'interazione delle fonte sonore con i punti di ripresa, è bene avanzare determinate premesse generali per considerare problematiche comuni nel mondo della rappresentazione di una fonte sonora, ovvero: quanto la resa qualitativa finale potrà essere fedele alla realtà?
@@ -74,6 +86,8 @@ Una volta chiara l'organizzazione dello spazio acustico e l'interazione delle fo
 	\paragraph{Riproduzione} Ovvero, potrebbe anche essere possibile riprodurre una registrazione catturata da un microfono Soundfield con un altoparlante tetraedrico, anche lui composto da più diffusori \textbf{puntiformi}, ma in tal caso comunque suonerebbe \textbf{un punto di ascolto} (con i suoi limiti dati dalla non-linearità dei microfoni e degli altoparlanti) e non \textbf{la fonte sonora originale}
 	
 %parla del vincolo di dover catturare una fonte sonora sferica o comunque non lineare con un  microfono. e di conseguenza del vicolo di dover riprodurre queste registrazioni con un impianto stereo, dunque da degli altoparlanti che rappresentano dei punti di diffusione non sferici, non reali, o comunque estremamente direzionali
+
+\newpage
 	
 	\subsection{L'obiettivo}
 	Dato che l'evento ha avuto luogo in un auditorium estremamente curato nella sua acustica, l'obiettivo che mi sono posto è avvicinarsi quanto più possibile alla resa acustica originale. Tenendo conto comunque di non poter venir meno ai vincoli sovracitati, trattandosi di problematiche assolute.
@@ -87,22 +101,39 @@ Nella fase di analisi del materiale all'inizio di una sessione di post produzion
 		\paragraph{ORTF} La registrazione dell'ORTF, essendo a due canali, permette di fare un routing Mid Side sommando L+R (e dimezzandone le ampiezze) nel primo canale della nuova traccia per ottenere il Mid, e L+(-R) (dimezzando anche quì le ampiezze) nel secondo canale ottenendo il Side.
 		In questo modo, su specifiche DAW che ci permettono di lavorare separatamente su ciascun canale di una traccia, come ad esempio Reaper, posso lavorare separatamente sul Mid e sul Side. Questo apre la strada a numerose possibilità di indagine e di missaggio dell'immagine stereofonica in termini di ampiezza e dimensioni.
 		
+		\begin{figure}[h]
+			\begin{center}
+				\includegraphics[width = .50\textwidth]{img/image4.jpg}
+				\caption{routing Mid Side del canale ORTF realizzato sulla DAW Reaper}
+			\end{center}
+		\end{figure}
+		
 		\paragraph{Spot dell'arpa} L'arpa è uno strumento duttile, di carattere avvolgente e delicato. Per questo motivo mi sarebbe piaciuto avere un controllo specifico sulla sua dimensione, l'ideale sarebbe stato farlo tramite un routing  Mid/Side. Ma la registrazione dello spot monofonico dell'arpa non apre a questa possibilità perchè la sorgente è registrata in mono: questo non permette di effettuare un routing Mid Side perchè i canali L e R contengono fondamentalmente lo stesso identico segnale. Di conseguenza, sommare L+(-R) equivale ad ottenere cancellazioni di fase che cancellano totalmente il segnale non permettendo di ottenere la componente Side della sorgente. Sull'altro canale invece, altro non avrò se non una somma di due registrazioni identiche, ovvero L+R. Data la situazione, occorre limitarsi a lavorare solo sul Mid.
+	
+\newpage
 		
 		\paragraph{Spot per viola e voce} In questo caso, come per l'arpa, abbiamo a che fare con un'unico spot monofonico addirittura per due sorgenti diverse, registrate in momenti diversi.
+		Per questo motivo, è stato effettuato un taglio alla clip audio durante il cambio tra viola e voce per poter gestire le due fonti su due canali separati e dedicargli due trattamenti diversi.
 		Data la situazione e i limiti che ci impediscono di eseguire un'indagine stereofonica sul materiale, anche in questo caso occorre arrangiarsi e lavorare solo sul mid.
-		Oltre questo, l'unica operazione valida da considerare è in termini di equalizzazione: si potrebbe copiare il materiale in due tracce diverse del mixer, in modo tale da poter equalizzare separatamente le registrazioni di viola e voce, dato che sopraggiungono in momenti differenti della performance
 	
 	\subsection{EQ}
+	Le equalizzazioni hanno seguito lo stesso processo per tutte le sorgenti:
+		\begin{enumerate}
+			\item Filtro passa alto per cancellare le basse frequenze fino alla banda più bassa del timbro dello strumento in questione, per evitare di perdere \textbf{headroom} (ovvero range dinamico di lavoro prima della distorsione digitale: guadagnare headroom è fondamentale per costruire il timbro complessivo del prodotto gestendo le dinamiche di ciascun elemento) e di creare \textbf{DC Offset} (ovvero Direct Current: un segnale unipolare che mantiene tutta la sua energia solo in positivo o in negativo, causando distorsione del segnale e, nel peggiore dei casi, bruciando la bobina degli altoparlanti che lo riproducono, in quanto sono progettati per ricevere corrente alternata e non continua). Il filtro passa alto ovviamente ha anche il compito di definire meglio il timbro dello strumento dandogli un limite nell'estensione bassa dello spettro, e quindi un ruolo timbrico.
+			\item Identificare eventuali risonanze con filtri a campana con un fattore di qualità stretto e attenuarle
+			\item Accentuare leggermente le bande portanti dello strumento per esaltare il suo timbro rispetto ad altri, in base al ruolo che questo assume nella registrazione
+		\end{enumerate}
 	
 	\subsection{Processori di dinamica}
 	La dinamica è lavorabile, gli interventi da effettuare eventualmente dipendono dal carattere che si intende dare al prodotto finale. Sicuramente le sorgenti sonore registrate hanno una notevole escursione dinamica, ed occorre comprendere quali sono i punti e gli strumenti nei quali la si vuole mantenere, ma procediamo per gradi.
 	
-		\paragraph{Introduzione} è stata registrata, purtroppo, solo dallo spot omni dell'arpa, oltre che dal microfono integrato nella videocamera con la quale è stato ripreso l'evento. Questo vuol dire che il materiale a disposizione del parlato è solo ambientale e a basso volume, di conseguenza ho svolto due operazioni: anzitutto ho normalizzato a mano le clip effettuando dei tagli e impostando dei guadagni. Successivamente, è stata applicata una lieve compressione per portare tutto allo stesso livello e contenere le escursioni dinamiche tra parlato a suono degli applausi.
+		\paragraph{Introduzione parlata} è stata registrata, purtroppo, solo dallo spot omni dell'arpa, oltre che dal microfono integrato nella videocamera con la quale è stato ripreso l'evento. Questo vuol dire che il materiale a disposizione del parlato è solo ambientale e a basso volume, di conseguenza ho svolto due operazioni: anzitutto ho normalizzato a mano le clip effettuando dei tagli e impostando dei guadagni. Successivamente, ho separato la clip del parlato da quella del pianoforte inserendola in una traccia separata, alla quale è stata applicata una lieve compressione per portare tutto allo stesso livello e contenere le escursioni dinamiche del parlato e il suono degli applausi.
 		
 		\paragraph{Pianoforte} Avendo effettuato un routing M/S dalla registrazione del pianoforte, è possibile indagare e lavorare il materiale intervenendo separatamente su Mid e Side. In questo caso, applicare una leggera compressione al mid del pianoforte potrebbe aiutare a dargli una spinta in più, trattandosi dello strumento protagonista di tutta l'esecuzione. Ma come è possibile intervenite in maniera trasparente, in modo tale da non comprimere eccessivamente la dinamica? Una volta impostato un livello indicativo di Ratio (rapporto di compressione) utile a percepire il lavoro del processore, il primo parametro comodo sul quale lavorare quando si effettua una compressione è la treeshold, ovvero la soglia al di la della quale il compressore inizierà a lavorare. In questo caso la si può impostare 2/3 dB al di sotto del livello dei picchi massimi, in modo tale da comprimere poco materiale. Ma quanto viene compresso? Quì entra in gioco la Ratio, la quale funziona per frazioni: un rapporto di 2:1 tirerà fuori 2dB per ogni dB in input, e in questo caso potrebbe andare bene.
 		Ora è il momento di scegliere il carattere della compressione tramite i tempi di atacco e rilascio. In questo caso l'obiettivo è di ottenere un risultato morbido e meno tagliente possibile. per rendere l'intervento trasparente si può impostare un tempo di attacco rapido (0.5ms) e un tempo di rilascio prolngato (>300ms).
 		Tenendo conto che non intendo comprimere la dinamica alzando il materiale a basso volume, manterrò un gain a 0dB
+		
+		\paragraph{Soprano} La voce del soprano presenta una notevole escursione dinamica, data sia dal carattere dell'esecuzione sia dai movimenti della cantante davanti al microfono. Per questo motivo è stata applicata una leggera compressione con Ratio 4:1, nell'intento di alzare leggermente il segnale al di sotto di una determinata soglia, per evitare di perdere il fuoco sulla voce che, in questa esecuzione, ha unruolo fondamentale.
 	
 \section{Conclusioni}
 
